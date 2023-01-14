@@ -17,7 +17,13 @@ useEffect(() => {
 
   return (
     <div>
-      
+      {[typeof backendData.user === 'undefined'] ? [
+        <p>Loading -__-</p>
+       ] : (
+        backendData.users.map((user, i) => (
+         <p key={i}>{user}</p>
+        ))
+      )}
     </div>
   );
 }
