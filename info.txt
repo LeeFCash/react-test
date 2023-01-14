@@ -1,1 +1,5 @@
-https://www.youtube.com/watch?v=hQAHSlTtcmY&t=12s
+learning react {
+    add react {
+        npx create-react-app . (in terminal)
+    }
+}
