@@ -1,5 +1,15 @@
 learning react {
     add react {
-        npx create-react-app . (in terminal)
+        npx create-react-app . // in terminal
     }
+    add proxy {
+        "proxy": "http://localhost:500", // allows relative api Effect and fixes issues with cross-origin
+        // node.js is backend and react is frontend
+    }
+}
+
+
+{
+    Link: https://www.youtube.com/watch?v=w3vs4a03y3I&t=320s
+    video, 8:06 in
 }
