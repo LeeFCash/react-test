@@ -8,6 +8,30 @@ learning react {
     }
 }
 
+remember react {
+    1 {
+        import './App.css';
+// if name is null then it puts "<h1>test</h1>" else "no"
+const App = () => {
+  const name = "null";
+  return (
+    <div className="App">
+      <p>
+        hello this is a test
+      </p>
+      {name ? (
+        <>
+        no
+        </>
+      ) : (
+        <h1>test</h1>
+      )}
+    </div>
+  );
+}
+
+    }
+}
 
 {
     Link: https://www.youtube.com/watch?v=w3vs4a03y3I&t=320s
