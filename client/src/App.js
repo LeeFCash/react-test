@@ -1,19 +1,13 @@
+import { useState } from 'react';
 import './App.css';
 
-const gu = () => {
-  return (
-    <>
-    <p>hello</p>
-    <p>yes</p>
-    </>
-  );
-}
-
 const App = () => {
-  const name = "null";
+  const [counter, setCounter] = useState(0);
   return (
     <div className="App">
-      <gu />
+      <button onClick={() => setCounter(overCount => overCount +1)} >+</button>
+      <p>{counter}</p>
+      <button onClick={() => setCounter(prevCount => prevCount -1)} >-</button>
     </div>
   );
 }
