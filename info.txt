@@ -9,7 +9,7 @@ learning react {
 }
 
 remember react {
-    1 {
+    1 {(app.js)
         import './App.css';
 // if name is null then it puts "<h1>test</h1>" else "no"
 const App = () => {
@@ -31,9 +31,21 @@ const App = () => {
 }
 
     }
-2 { // this makes it to where I can change something by onclick and also have a number go up or down
-  import { useState } from 'react';
+2 { //(app.js) this makes it to where I can change something by onclick and also have a number go up or down
+import { useState } from 'react';
 import './App.css';
+
+/*
+useEffect(() => {
+  alert("hello this will run each time you change the counter also update");
+}, [counter]);
+*/
+
+/* this set's the counter to whatever number i set it as and don't change the counter directly
+useEffect(() => {
+  setCounter(1000);
+}, []);
+*/
 
 const App = () => {
   const [counter, setCounter] = useState(0);
@@ -48,6 +60,34 @@ const App = () => {
 export default App;
 }
 
+3 {// index.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(// this will only work if i remove the (React.StrictMode)
+  <>
+    <App />
+  </>
+);
+
+/* this is what it was before (above)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+*/
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+/*reportWebVitals();  this seems to be something i dont need but not sure*/
+
+}
 };
 
 {
