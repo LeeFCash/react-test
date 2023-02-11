@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-/* you can do put this ( or what is below)
+// you can do put this ( or what is below)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(// this will only work if i remove the (React.StrictMode)
   <>
     <App />
   </>
 );
-*/
+//
 
 
 /* this is what it was before (above)
